@@ -135,11 +135,6 @@ details[open] summary {
   margin-bottom: 25px;
 }
 
-.download h4 {
-  text-align: center;
-  border-radius: 6px;
-}
-
 .download figure {
   text-align: center;
 }
@@ -493,10 +488,6 @@ footer a:focus {
   color: #79D6A8;   
 }
 
-body.large-font {
-  font-size: 110%; 
-}
-
 body.large-font h1,
 body.large-font h2,
 body.large-font h3 {
@@ -727,7 +718,9 @@ img.form-image {
 }
 
 @media (max-width: 768px) {
-
+    header .main-nav {
+    padding-bottom: 70px; /* több hely a gomboknak */
+  }
   header .main-nav .nav-actions {
     position: static !important; 
     transform: none !important;
@@ -742,4 +735,19 @@ img.form-image {
     font-size: 1rem;
   }
 }
+@media (max-width: 480px) {
+  header .main-nav ul {
+    gap: 8px;
+    flex-wrap: wrap;            
+  }
 
+  header .main-nav ul li a {
+    padding: 6px 12px;          
+    font-size: 0.9rem;          
+    border-radius: 8px;
+  }
+}
+
+.home .intro h4 {
+  font-size: 2rem;
+}
