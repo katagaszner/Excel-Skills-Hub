@@ -736,20 +736,38 @@ img.form-image {
   }
 }
 @media (max-width: 480px) {
+
   header .main-nav ul {
-    gap: 8px;
-    flex-wrap: wrap;            
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 oszlop */
+    gap: 10px;
+    padding: 0 12px;
   }
 
   header .main-nav ul li a {
-    padding: 8px 14px;          
-    font-size: 1rem;          
-    border-radius: 8px;
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 0.95rem;
+    white-space: nowrap;
+  }
+
+  header .main-nav .nav-actions {
+    position: static !important;
+    transform: none !important;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* gombok is 2 oszlopban */
+    gap: 10px;
+    padding: 0 12px 10px;
+  }
+
+  header .main-nav .nav-btn {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 0.95rem;
   }
 }
 
-.home .intro h4 {
-  font-size: 2rem;
-}
 
 
