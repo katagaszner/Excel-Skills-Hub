@@ -742,8 +742,8 @@ img.form-image {
   }
 
   header .main-nav ul li a {
-    padding: 6px 12px;          
-    font-size: 0.9rem;          
+    padding: 8px 14px;          
+    font-size: 1rem;          
     border-radius: 8px;
   }
 }
@@ -751,3 +751,4 @@ img.form-image {
 .home .intro h4 {
   font-size: 2rem;
 }
+
