@@ -1,0 +1,97 @@
+@import url("stilus.css");
+
+/* --- Globális nagyítás --- */
+body.large-font {
+  font-size: 1.4rem;
+  line-height: 1.7;
+}
+
+/* Menü */
+body.large-font header nav ul li a {
+  font-size: 1.3rem;
+  padding: 12px 26px;
+}
+
+/* Hero szövegek */
+body.large-font .hero-text h2 {
+  font-size: 4rem;
+}
+
+body.large-font .hero-text p {
+  font-size: 1.8rem;
+}
+
+/* Intro szövegek */
+body.large-font .intro p {
+  font-size: 1.4rem;
+}
+
+/* Táblázat */
+body.large-font table {
+  font-size: 1.3rem;
+}
+
+body.large-font thead th {
+  font-size: 1.35rem;
+}
+
+body.large-font tbody td {
+  font-size: 1.25rem;
+}
+
+/* Tippek oldal */
+body.large-font .tip-row article {
+  font-size: 1.35rem;
+}
+
+body.large-font .tip-section h3 {
+  font-size: 1.6rem;
+}
+
+/* Űrlap */
+body.large-font form label,
+body.large-font form legend,
+body.large-font form .form-check-label,
+body.large-font form input,
+body.large-font form textarea,
+body.large-font form button {
+  font-size: 1.3rem;
+}
+
+/* Kártyák a kezdőlapon */
+body.large-font .overview-card {
+  font-size: 1.3rem;
+}
+
+body.large-font .overview-card h3 {
+  font-size: 1.7rem;
+}
+
+/* Függvények oldal nagyobb szöveg */
+body.large-font .functions-intro p,
+body.large-font .functions-intro li {
+  font-size: 1.35rem;
+}
+
+/* Tippek oldal nagyobb szöveg */
+body.large-font .tip-section p,
+body.large-font .tip-section li {
+  font-size: 1.35rem;
+}
+
+/* Letöltés blokk */
+body.large-font .download,
+body.large-font .download figcaption {
+  font-size: 1.3rem;
+}
+
+/* Videóblokk szövege */
+body.large-font .video-links p,
+body.large-font .video-links figcaption {
+  font-size: 1.3rem;
+}
+
+body.large-font .functions-intro h2 {
+  font-size: 2.8rem;
+}
+

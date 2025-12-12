@@ -1,0 +1,91 @@
+* {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+body {
+  color: #000;
+  font-size: 11pt;
+  line-height: 1.4;
+  margin: 1.5cm;
+}
+
+/* Ismétlődő elemek eltüntetése */
+header,
+footer,
+nav,
+.hero {
+  display: none !important;
+}
+
+/* Videók teljes elrejtése */
+video,
+.video-grid img {
+  display: none !important;
+}
+
+.video-grid figure::after {
+  content: "A videót a nyomtatási nézetből eltávolítottuk";
+  display: block;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: 10px;
+  color: #444;
+  border: 1px dashed #888;
+  padding: 5px;
+}
+
+/* Képek kicsinyítése minden oldalon */
+img {
+  max-width: 40% !important;
+  height: auto;
+  margin: 5px 0;
+}
+
+/* A fő tartalom töltse ki a lapot */
+main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.tip-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: nowrap !important; 
+  width: 100%;
+  page-break-inside: avoid;
+  margin-bottom: 16px;
+}
+
+.tip-row figure {
+  order: 1;
+  flex: 0 0 35%;
+  margin: 0 20px 0 0;           
+  text-align: center;
+}
+
+.tip-row article {
+  order: 2;
+  flex: 1 1 65%;
+  font-size: 11pt;
+}
+
+.tip-row img {
+  max-width: 100% !important;
+  height: auto !important;
+  border: 1px solid #aaa;
+}
+
+/* Űrlap illusztráció eltüntetése nyomtatáskor */
+.form-image {
+  display: none !important;
+}
+
+.lead {
+  color: #000 !important;
+  font-size: 11pt;
+  font-weight: 500;
+  line-height: 1.4;
+}

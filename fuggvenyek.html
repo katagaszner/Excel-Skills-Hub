@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Függvények - Excel tutorial</title>
+
+    <link rel="stylesheet" href="css/stilus.css">
+    <link rel="stylesheet" href="css/nagybetus.css">
+    <link rel="stylesheet" href="css/nagykontraszt.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+    <script src="scripts/script.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <nav id="tartalomraugras">
+            <h2 class="rejtett">Ugrás az oldalon belül</h2>
+            <p class="rejtett"><a href="#tartalom"> Ugrás a tartalomra</a></p>
+        </nav>
+
+        <h1>Függvények</h1>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="fuggvenyek.html" class="active">Függvények</a></li>
+                <li><a href="tippek.html">Tippek</a></li>
+                <li><a href="urlap.html">Űrlap</a></li>
+            </ul>
+            <div class="nav-actions">
+              <button id="font-toggle" class="nav-btn">Nagyobb betűk</button>
+              <button id="contrast-toggle" class="nav-btn">Kontraszt</button>
+           </div>
+        </nav>
+    </header>
+
+    <main id="tartalom">
+        <section class="functions-intro">
+            <h2 class="rejtett">Bevezetés az Excel függvényekbe</h2>
+            <article>
+                <h2>Az Excel függvényei</h2>
+                <p>
+                    Az Excel egyik legerősebb eszköze a <strong>függvények</strong> használata.
+                    A függvények előre beépített képletek, amelyek segítségével gyorsan és hatékonyan
+                    végezhetünk számításokat anélkül, hogy hosszú képleteket kellene kézzel megírnunk.
+                </p>
+
+                <h3>Miért hasznosak a függvények?</h3>
+                <ul>
+                    <li><strong>Időt takarítanak meg:</strong> nem kell bonyolult műveleteket újra és újra beírni.</li>
+                    <li><strong>Pontosságot adnak:</strong> a számítás hibalehetősége csökken.</li>
+                    <li><strong>Automatizálnak:</strong> a táblázatok könnyebben karbantarthatók és frissíthetők.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="functions-table">
+            <h2>Gyakran használt függvények</h2>
+
+            <table>
+                <caption>
+                    <details>
+                        <summary>Magyarázat a táblázathoz</summary>
+                        <p>
+                            A táblázat a függvény nevét, egy egyszerű <em>példát</em>, valamint az
+                            <strong>eredményt</strong> mutatja. A példák segítenek megérteni, mikor érdemes
+                            az adott függvényt használni.
+                        </p>
+                    </details>
+                </caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Függvény neve</th>
+                        <th scope="col">Példa</th>
+                        <th scope="col">Eredmény</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>=SZUM(A1:A5)</code></td>
+                        <td>Összeadja az A1–A5 cellákat</td>
+                        <td>Az adott tartomány összege</td>
+                    </tr>
+                    <tr>
+                        <td><code>=ÁTLAG(B1:B10)</code></td>
+                        <td>Kiszámítja a B1–B10 tartomány átlagát</td>
+                        <td>Átlagérték</td>
+                    </tr>
+                    <tr>
+                        <td><code>=MAX(C1:C8)</code></td>
+                        <td>Kiválasztja a legnagyobb számot a tartományból</td>
+                        <td>Legnagyobb érték</td>
+                    </tr>
+                    <tr>
+                        <td><code>=MIN(C1:C8)</code></td>
+                        <td>Kiválasztja a legkisebb számot a tartományból</td>
+                        <td>Legkisebb érték</td>
+                    </tr>
+                    <tr>
+                        <td><code>=HA(D1&gt;50; "Siker"; "Sikertelen")</code></td>
+                        <td>Feltételes vizsgálat</td>
+                        <td>„Siker” vagy „Sikertelen”</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="video-links">
+        <h2 class="rejtett">Videós magyarázatok</h2>
+        <details>
+        <summary>Videós magyarázatok</summary>
+            <p>
+                <strong>Ha könnyebben tanulsz videók segítségével, jó helyen jársz!</strong><br>
+                Az alábbiakban többféle rövid, gyakorlati bemutatót találsz:
+            </p>
+            <ul>
+                <li>
+                    Az <strong>első két előnézeti kép</strong> közvetlenül a YouTube-ra vezet, ahol
+                    részletes magyarázatokat láthatsz az Excel alapvető függvényeiről és használati technikáiról.
+                </li>
+                <li>
+                    A <strong>harmadik videó</strong> közvetlenül az oldalon játszható le, így azonnal 
+                    megtekintheted, hogyan működik a <em>HA függvény</em> a gyakorlatban.
+                </li>
+            </ul>
+            <p>Kattints bármelyik képre vagy videóra, és már kezdheted is a tanulást!</p>
+        </details>
+            <div class="video-grid">
+                <figure>
+                    <a href="https://www.youtube.com/watch?v=0_w0LVBQ_t4" target="_blank" rel="noopener">
+                        <img src="média/fuggvenyek/video_1.png" alt="Bevezetés az Excel függvényekbe – videó előnézet">
+                    </a>
+                    <figcaption>Bevezetés az Excel függvényekbe - videó</figcaption>
+                </figure>
+
+                <figure>
+                    <a href="https://www.youtube.com/watch?v=YqF62MDY7ts" target="_blank" rel="noopener">
+                        <img src="média/fuggvenyek/video_2.png" alt="Feltételes függvények – videó előnézet">
+                    </a>
+                    <figcaption>Feltételes függvények - videó</figcaption>
+                </figure>
+
+                <figure>
+                    <video controls poster="média/fuggvenyek/if_function_index.png" aria-label="A HA függvény használatának bemutatása Excelben">
+                        <source src="média/fuggvenyek/if_function.mp4" type="video/mp4">
+                        A böngészője nem támogatja a HTML5 videók lejátszását.
+                    </video>
+                    <figcaption>
+                        <a href="fuggvenyek_video_leiras.xhtml">Ha függvény használata – szöveges leírás</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Excel útmutató</p>
+    </footer>
+</body>
+</html>

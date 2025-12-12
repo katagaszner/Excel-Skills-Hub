@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tippek – Excel tutorial</title>
+
+    <link rel="stylesheet" href="css/stilus.css">
+    <link rel="stylesheet" href="css/nagybetus.css">
+    <link rel="stylesheet" href="css/nagykontraszt.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+    <script src="scripts/script.js" defer></script>
+
+</head>
+<body>
+<header>
+    <nav id="tartalomraugras">
+        <h2 class="rejtett">Ugrás az oldalon belül</h2>
+        <p class="rejtett"><a href="#tartalom">Ugrás a tartalomra</a></p>
+    </nav>
+
+    <h1>Tippek és trükkök</h1>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Kezdőlap</a></li>
+            <li><a href="fuggvenyek.html">Függvények</a></li>
+            <li><a href="tippek.html" class="active">Tippek</a></li>
+            <li><a href="urlap.html">Űrlap</a></li>
+        </ul>
+          <div class="nav-actions">
+              <button id="font-toggle" class="nav-btn">Nagyobb betűk</button>
+              <button id="contrast-toggle" class="nav-btn">Kontraszt</button>
+           </div>
+    </nav>
+</header>
+
+<main id="tartalom">
+        <section class="functions-intro">
+            <h2 class="rejtett">Gyorsbillentyűk – bevezető szakasz</h2>
+            <article>
+                <h2>Gyorsbillentyűk, amelyek időt spórolnak</h2>
+                <p>
+                    <strong>Szeretnéd gyorsabban és hatékonyabban használni az Excelt?</strong><br>
+                    A legtöbb profi felhasználó egyik titkos fegyvere a gyorsbillentyűk ismerete. 
+                    Ezekkel a billentyűkombinációkkal akár 
+                    <strong>másodperceket spórolhatsz minden egyes műveleten</strong>, 
+                    ami hosszú távon hatalmas időnyereséget jelent.
+                </p>
+                <p>
+                    Az alábbi táblázatban összegyűjtöttük a 
+                    <strong>legfontosabb és leggyakrabban használt gyorsbillentyűket</strong>, 
+                    amelyekkel azonnal felgyorsíthatod a munkafolyamataidat – 
+                    akár kezdő, akár haladó felhasználó vagy.
+                </p>
+            </article>
+        </section>
+
+    <section class="functions-table">
+        <h2 class="rejtett">Gyorsbillentyűk táblázata</h2>
+        <table>
+            <caption>
+                <details>
+                    <summary>A táblázat magyarázata</summary>
+                    <p>
+                        A legfontosabb Excel gyorsbillentyűk, amelyekkel a kijelölés, másolás,
+                        beillesztés és szerkesztés jóval gyorsabbá válik.
+                    </p>
+                </details>
+            </caption>
+
+            <thead>
+                <tr>
+                    <th>Művelet</th>
+                    <th>Gyorsbillentyű</th>
+                    <th>Mit csinál?</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Másolás</td>
+                    <td><code>Ctrl + C</code></td>
+                    <td>Kijelölt cellák másolása</td>
+                </tr>
+                <tr>
+                    <td>Beillesztés</td>
+                    <td><code>Ctrl + V</code></td>
+                    <td>Másolt cellák beillesztése</td>
+                </tr>
+                <tr>
+                    <td>Kivágás</td>
+                    <td><code>Ctrl + X</code></td>
+                    <td>Cellák tartalmának áthelyezése</td>
+                </tr>
+                <tr>
+                    <td>Új sor beszúrása</td>
+                    <td><code>Ctrl + Shift + +</code></td>
+                    <td>Új sor vagy oszlop beszúrása</td>
+                </tr>
+                <tr>
+                    <td>Szűrő be-/kikapcsolása</td>
+                    <td><code>Ctrl + Shift + L</code></td>
+                    <td>Gyors szűrés aktiválása</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+<section class="tip-section">
+    <h3>Gyors kitöltés <span lang="en">(Flash Fill)</span></h3>
+    <div class="tip-row">
+        <article>
+            <h4 class="rejtett">Gyors kitöltés – leírás</h4>
+            <p>
+                Ha például neveket szeretnénk szétválasztani vezetéknévre és keresztnévre,
+                az Excel képes felismerni a mintát, és automatikusan kitölti a többi cellát.
+                A Gyors kitöltés különösen hasznos akkor, ha sok adatot kell átalakítani,
+                formázni vagy egységesíteni különböző oszlopokban.
+            </p>
+            <p>
+                Nem kell hozzá bonyolult függvényeket használnod:
+                elég, ha néhány példát megadsz az Excelnek, és a program „kitalálja”,
+                hogyan szeretnéd folytatni az átalakítást. Ezáltal rengeteg időt spórolhatsz meg.
+            </p>
+            <p>
+                Ehhez csak írjuk be az első átalakított adatot, majd használjuk a
+                <strong>Ctrl + E</strong> billentyűkombinációt, vagy a Kezdőlap menü
+                „Kitöltés → Gyors kitöltés” parancsát.
+            </p>
+        </article>
+
+        <figure>
+            <a href="média/tippek/flash_fill.png">
+                <img src="média/tippek/flash_fill_thumb.png"
+                     alt="Gyors kitöltés példa képe"
+                     class="thumb">
+            </a>
+            <figcaption>Gyors kitöltés működés közben</figcaption>
+        </figure>
+    </div>
+</section>
+
+<section class="tip-section">
+    <h3>Feltételes formázás</h3>
+    <div class="tip-row">
+        <article>
+            <h4 class="rejtett">Feltételes formázás – leírás</h4>
+            <p>
+                A feltételes formázás segítségével a cellák kinézete automatikusan változik,
+                ha egy általad meghatározott feltétel teljesül. Ez lehet például az, hogy
+                egy érték kisebb mint 0, nagyobb mint egy határérték, vagy egy adott szöveget tartalmaz.
+            </p>
+            <p>
+                A funkció rendkívül látványos és hasznos, mert első pillantásra felismerhetjük
+                a fontos adatokat: kiugró értékeket, hibákat, trendeket vagy problémás adatpontokat.
+                Így nem kell soronként végignézned a táblázatot – az Excel vizuálisan kiemeli
+                számodra a lényeges részeket.
+            </p>
+            <p>
+                A formázás beállításához válaszd a <strong>Kezdőlap → Feltételes formázás</strong>
+                menüpontot, majd hozz létre új szabályt, vagy használj egy előre definiált lehetőséget
+                (például adatsávok, színskálák vagy ikonok).
+            </p>
+            <p><strong>Menü:</strong> Kezdőlap &gt; Feltételes formázás</p>
+        </article>
+
+        <figure>
+            <a href="média/tippek/conditional_format.png">
+                <img src="média/tippek/conditional_format_thumb.png"
+                     alt="Feltételes formázás példa képe"
+                     class="thumb">
+            </a>
+            <figcaption>Feltételes formázáshoz új szabály létrehozása</figcaption>
+        </figure>
+    </div>
+</section>
+
+    <section class="tip-section">
+        <h3>Adatok szűrése és rendezése</h3>
+        <div class="tip-row">
+            <article>
+                <h4 class="rejtett">Rendezés és szűrés – leírás</h4>
+                <p>
+                    Nagyobb táblázatok esetén különösen fontos, hogy gyorsan megtaláljuk a szükséges adatokat.
+                    A szűrés funkcióval például elrejthetjük azokat a sorokat, amelyek egy adott feltételnek
+                    nem felelnek meg, így csak a számunkra releváns információk maradnak láthatók.
+                </p>
+                <p>
+                    A rendezés segítségével könnyedén sorba tehetjük az adatokat növekvő, csökkenő,
+                    alfabetikus vagy egyéni sorrend szerint. Ez különösen hasznos elemzések,
+                    listák vagy összegzések készítésénél.
+                </p>
+                <p>
+                    A szűrőt a <strong>Kezdőlap → Szűrő</strong> vagy a
+                    <strong>Ctrl + Shift + L</strong> billentyűparanccsal kapcsolhatjuk be.
+                </p>
+            </article>
+
+            <figure>
+                <a href="média/tippek/sort_filter.png">
+                    <img src="média/tippek/sort_filter_thumb.png"
+                        alt="Szűrés példa képe"
+                        class="thumb">
+                </a>
+                <figcaption>Adatok gyors szűrése</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="tip-section">
+        <h3>Diagram készítése néhány kattintással</h3>
+        <div class="tip-row">
+            <article>
+                <h4 class="rejtett">Diagram készítés – leírás</h4>
+                <p>
+                    Az Excel bármely adatlistából képes látványos diagramot készíteni,
+                    amely segít megérteni az adatok közötti összefüggéseket és trendeket.
+                    A diagramok különösen hasznosak prezentációkhoz, jelentésekhez és
+                    adatvizualizációkhoz.
+                </p>
+                <p>
+                    A diagram létrehozásához először jelöljük ki az adatokat,
+                    majd válasszuk a <strong>Beszúrás → Diagramok</strong> menüpontot.
+                    Az Excel automatikusan ajánl diagramtípusokat
+                    (oszlopdiagram, vonaldiagram, kördiagram stb.),
+                    de a megjelenést teljes mértékben testreszabhatjuk igényeink szerint.
+                </p>
+                <p>
+                    Minél rendezettebb az adatunk, annál könnyebben hozhatunk létre jól áttekinthető,
+                    informatív ábrákat, amelyek segítenek gyorsan átlátni a legfontosabb adatokat.
+                </p>
+            </article>
+
+            <figure>
+                <a href="média/tippek/diagram.png">
+                    <img src="média/tippek/diagram_thumb.png"
+                        alt="Diagram készítés példa képe"
+                        class="thumb">
+                </a>
+                <figcaption>Gyors diagramkészítés</figcaption>
+            </figure>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2025 Excel útmutató</p>
+</footer>
+</body>
+</html>

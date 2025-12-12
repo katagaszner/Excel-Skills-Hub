@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Excel IF function – video transcript</title>
+    
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container my-4">
+        <h1 class="mb-4">Video description – Excel IF function</h1>
+
+        <p class="mb-3">
+            The IF function is the most important logical function in Excel. The IF function is used
+            to test for a condition and return one value if the condition is true, and another value
+            if the condition is false.
+        </p>
+
+        <p class="mb-3">
+            To illustrate how the IF function works, let&#39;s look at an example. Here we have a table
+            of data that consists of item and quantity columns. Let&#39;s use the IF function to return
+            a value of &quot;Reorder&quot; if the quantity is less than 10.
+        </p>
+
+        <p class="mb-3">
+            To get started, let&#39;s begin by entering the IF command. As you can see, the IF function
+            takes three parameters, with the last parameter being optional. The first parameter is
+            the condition or value to test. In our example, we want to test to see if the value in
+            cell B2 is less than 10, so we will enter B2 is less than 10 as the condition to test for.
+        </p>
+
+        <p class="mb-3">
+            The second parameter we will need to enter is the value to return if the condition is
+            true. In our example, we will enter the value &quot;Reorder&quot;. This means that if
+            the value in cell B2 is less than 10, the IF function will return &quot;Reorder&quot;.
+        </p>
+
+        <p class="mb-3">
+            The third parameter is optional. If provided, it contains the value that will be returned
+            if the condition evaluates to false. To highlight a common mistake, we will leave this
+            parameter out in our example.
+        </p>
+
+        <p class="mb-3">
+            Now that we have entered all of the IF function&#39;s parameters, let&#39;s complete the command
+            to examine the result. You should see the value &quot;Reorder&quot; appear in cell D2.
+            Since cell B2 contains the value of seven, which is less than 10, the IF function will
+            return &quot;Reorder&quot;.
+        </p>
+
+        <p class="mb-3">
+            Now, let&#39;s copy our formula into cells D3 to D5.
+        </p>
+
+        <p class="mb-3">
+            Notice that in cells D3 and D4, the value FALSE appears. Since we didn&#39;t specify a third
+            parameter in our formula, the IF function will return FALSE when the condition evaluates
+            to false. Many make the mistake of assuming that by leaving out the third parameter, the
+            IF function will return a blank result when the condition is false. To avoid unexpected
+            results, it is a good idea to always enter the third parameter.
+        </p>
+
+        <p class="mb-3">
+            So, let&#39;s rewrite our formula to return a blank value when the condition evaluates to
+            false. In cell E2, we will enter our IF command and again use B2 is less than 10 for the
+            first parameter, and &quot;Reorder&quot; for the second parameter. This time, however,
+            we will enter two quotation marks as a third parameter. This represents a blank value
+            or empty string.
+        </p>
+
+        <p class="mb-3">
+            Now, let&#39;s complete the command and copy our formula into cells E3 to E5.
+        </p>
+
+        <p class="mb-3">
+            This time we can see that instead of returning FALSE for rows 3 and 4, the IF function
+            has returned a blank cell. So, when you write your IF function, remember to include both
+            the value to return when the condition is true, as well as the value to return when the
+            condition is false.
+        </p>
+
+        <p class="mb-4">
+            This completes our example of how to use Excel&#39;s IF function. If you would like to see
+            more IF examples or would like to download the sample data we used for this tutorial,
+            please visit our website at <span lang="en">techonthenet.com</span>. If you found our
+            tutorial helpful, please leave a like on this video and don&#39;t forget to subscribe to our
+            YouTube channel for more great Excel tutorials.
+        </p>
+
+        <p class="mt-4">
+            <a href="fuggvenyek.html"
+               class="btn btn-secondary"
+               xml:lang="hu"
+               lang="hu">Vissza a függvények oldalra</a>
+        </p>
+    </div>
+</body>
+</html>

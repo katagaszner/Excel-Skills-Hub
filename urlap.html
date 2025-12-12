@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapcsolat / Űrlap - Excel tutorial</title>
+
+    <link rel="stylesheet" href="css/stilus.css">
+    <link rel="stylesheet" href="css/nagybetus.css">
+    <link rel="stylesheet" href="css/nagykontraszt.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+    <script src="scripts/script.js" defer></script>
+
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+      rel="stylesheet">
+
+    <link 
+      rel="stylesheet" 
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+<body>
+
+<header>
+    <nav id="tartalomraugras">
+        <h2 class="rejtett">Ugrás az oldal tartalmára</h2>
+        <p class="rejtett"><a href="#tartalom">Ugrás a tartalomra</a></p>
+    </nav>
+
+    <h1>Kapcsolat / Űrlap</h1>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Kezdőlap</a></li>
+            <li><a href="fuggvenyek.html">Függvények</a></li>
+            <li><a href="tippek.html">Tippek</a></li>
+            <li><a href="urlap.html" class="active">Űrlap</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button id="font-toggle" class="nav-btn">Nagyobb betűk</button>
+            <button id="contrast-toggle" class="nav-btn">Kontraszt</button>
+        </div>
+    </nav>
+</header>
+
+<main id="tartalom" class="container my-4">
+
+    <section class="mb-4 form-header-bg">
+        <h2 class="rejtett">Űrlap bevezető</h2>
+        <p class="lead">
+            Szeretnénk, ha megosztanád velünk a véleményedet az Excel használati útmutatóról.
+            Az alábbi űrlap kitöltésével visszajelzést adhatsz, és segíthetsz abban,
+            hogy még jobb tartalmakat készíthessünk.
+        </p>
+    </section>
+
+    <div class="row g-4">
+
+        <div class="col-12 col-md-6 col-lg-7">
+            <section aria-labelledby="urlap-cim">
+                <h2 id="urlap-cim" class="mb-3">Visszajelzés küldése</h2>
+
+                <form action="mailto:pelda@email.hu" method="post" enctype="text/plain">
+
+                    <div class="mb-3">
+                        <label for="nev" class="form-label">Név:</label>
+                        <input 
+                            type="text" 
+                            class="form-control" 
+                            id="nev" 
+                            name="nev" 
+                            maxlength="50"
+                            required
+                            placeholder="Írd be a nevedet">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail cím:</label>
+                        <input 
+                            type="email" 
+                            class="form-control" 
+                            id="email" 
+                            name="email" 
+                            maxlength="80"
+                            required 
+                            placeholder="pelda@email.hu">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="uzenet" class="form-label">Visszajelzésed az útmutatóról:</label>
+                        <textarea 
+                            class="form-control" 
+                            id="uzenet" 
+                            name="uzenet" 
+                            rows="5"
+                            maxlength="600"
+                            placeholder="Írd le a tapasztalataidat..."></textarea>
+                    </div>
+
+                    <fieldset class="mb-3">
+                        <legend class="col-form-label pt-0">Milyen szinten használod az Excelt?</legend>
+
+                        <div class="form-check">
+                            <input 
+                                class="form-check-input"
+                                type="radio"
+                                name="excel_szint"
+                                id="szint-kezdo"
+                                value="Kezdő"
+                                checked>
+                            <label class="form-check-label" for="szint-kezdo">Kezdő</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input 
+                                class="form-check-input"
+                                type="radio"
+                                name="excel_szint"
+                                id="szint-kozep"
+                                value="Középhaladó">
+                            <label class="form-check-label" for="szint-kozep">Középhaladó</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input 
+                                class="form-check-input"
+                                type="radio"
+                                name="excel_szint"
+                                id="szint-halado"
+                                value="Haladó">
+                            <label class="form-check-label" for="szint-halado">Haladó</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="mb-3">
+                        <legend class="col-form-label pt-0">Érdekelne további kurzus vagy tananyag?</legend>
+
+                        <div class="form-check">
+                            <input 
+                                class="form-check-input"
+                                type="checkbox"
+                                id="hirlevel"
+                                name="hirlevel"
+                                value="Igen">
+                            <label class="form-check-label" for="hirlevel">
+                                Igen, szeretnék értesítést kapni új anyagokról
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="d-flex gap-3 mt-4">
+                        <button type="submit" class="btn btn-primary">Elküldés</button>
+                        <button type="reset" class="btn btn-outline-secondary">Alaphelyzet</button>
+                    </div>
+
+                </form>
+            </section>
+        </div>
+
+        <aside class="col-12 col-md-6 col-lg-5">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="h4">Elérhetőségek</h2>
+
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <h3 class="h6">Email</h3>
+                            <p><i class="bi bi-envelope"></i> 
+                                <a href="mailto:pelda@email.hu">oi38hh@inf.elte.hu</a>
+                            </p>
+                        </div>
+
+                        <div class="col-6">
+                            <h3 class="h6">Telefonszám</h3>
+                            <p><i class="bi bi-telephone"></i> +36 1 111 1111</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <figure>
+                <img 
+                    src="média/urlap/urlap.png" 
+                    alt="Kapcsolat illusztráció"
+                    class="img-fluid no-zoom form-image">
+            </figure>
+        </aside>
+
+    </div>
+</main>
+
+<footer class="text-center py-2">
+    <p>© 2025 Excel útmutató</p>
+</footer>
+
+<script 
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+</body>
+</html>

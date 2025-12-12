@@ -1,0 +1,132 @@
+/* alap stílus importálása */
+@import url("stilus.css");
+
+/* ===== Nagy kontraszt – sötét háttér + világos betűk ===== */
+body.highcontrast {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Linkek jól láthatóan */
+body.highcontrast a {
+  color: #00ff90;
+}
+
+body.highcontrast a:hover {
+  color: #00ffaa;
+}
+
+/* Menü */
+body.highcontrast header .main-nav {
+  background-color: #111;
+}
+
+body.highcontrast header .main-nav ul li a {
+  background-color: #333;
+  color: #fff;
+}
+
+body.highcontrast header .main-nav ul li a:hover,
+body.highcontrast header .main-nav ul li a.active {
+  background-color: #555;
+}
+
+/* Gombok */
+body.highcontrast header .main-nav .nav-btn {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Hero overlay sötétebb */
+body.highcontrast .hero::before {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Táblázatok */
+body.highcontrast table,
+body.highcontrast th,
+body.highcontrast td {
+  background-color: #111;
+  color: #fff;
+  border-color: #444;
+}
+
+body.highcontrast thead th {
+  background-color: #222;
+}
+
+/* Kezdőlap kártyák */
+body.highcontrast .overview-card {
+  background-color: #111;
+  color: #fff;
+  border: 1px solid #444;
+  box-shadow: none;
+}
+
+body.highcontrast .overview-card p {
+  color: #f5f5f5;
+}
+
+/* Tippek */
+body.highcontrast .tip-section h3 {
+  background-color: #111;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+body.highcontrast .tip-row article {
+  color: #fff;
+}
+
+/* Függvények oldal */
+body.highcontrast .functions-intro {
+  background-color: #111;
+  color: #fff;
+  box-shadow: none;
+}
+
+body.highcontrast .functions-intro h3 {
+  border-left-color: #00ff90;
+}
+
+/* Kezdőlap intro */
+body.highcontrast .home .intro {
+  background-color: #111;
+  color: #fff;
+  box-shadow: none;
+}
+
+/* Bootstrap kártyák */
+body.highcontrast .card,
+body.highcontrast .card-body {
+  background-color: #1a1a1a;
+  color: #fff;
+  border-color: #444;
+}
+
+/* Űrlapmezők */
+body.highcontrast .form-control,
+body.highcontrast textarea,
+body.highcontrast input[type="text"],
+body.highcontrast input[type="email"] {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+/* Placeholder */
+body.highcontrast ::placeholder {
+  color: #bbb;
+}
+
+/* Űrlap címkék */
+body.highcontrast label,
+body.highcontrast legend,
+body.highcontrast .form-check-label {
+  color: #fff;
+}
+
+
+body.highcontrast .functions-intro strong {
+  color: #00ff90 !important;
+}
